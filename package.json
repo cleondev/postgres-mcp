@@ -1,0 +1,24 @@
+{
+  "name": "postgres-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PostgreSQL MCP server that is read-only by default, runs exactly one statement per call, and keeps the password off the command line.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "postgres-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "pg": "8.23.1",
+    "zod": "4.6.7"
+  }
+}
